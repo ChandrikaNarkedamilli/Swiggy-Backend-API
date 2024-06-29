@@ -11,7 +11,7 @@ const path = require('path')
 const app = express()
 
 
-const PORT = 4000
+const PORT = process.env.PORT || 4000
 
 dotEnv.config()
 app.use(cors())
@@ -30,6 +30,6 @@ app.listen(PORT, ()=>{
   console.log(`Server started running at ${PORT}`)
 })
 
-app.use('/home',(req,res)=>{
+app.use('/',(req,res)=>{
   res.send("<h1>Welcome to Swiggy APp</h1>")
 })
