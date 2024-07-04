@@ -35,5 +35,5 @@ app.listen(PORT, ()=>{
 })
 
 app.use('/',(req,res)=>{
-  res.send("<h1>Welcome to Swiggy APp</h1>")
+  res.send("<h1>Welcome to Swiggy App</h1>")
 })
