@@ -14,7 +14,11 @@ const app = express()
 const PORT = process.env.PORT || 4000
 
 dotEnv.config()
-app.use(cors())
+// app.use(cors())
+app.use(cors({
+  origin: 'http://localhost:5174', // your frontend URL
+  credentials: true
+}));
 
 mongoose.connect(process.env.MONGO_URI)
   .then(()=>console.log("MongoDB Connection Establised Successfully!"))
