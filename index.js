@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 4000
 dotEnv.config()
 // app.use(cors())
 app.use(cors({
-  origin: 'http://localhost:5174', // your frontend URL
+  origin: 'http://localhost:5173', // your frontend URL
   credentials: true
 }));
 
