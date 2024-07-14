@@ -50,7 +50,7 @@ const getProductByFirm = async(req,res)=>{
     const firm = await Firm.findById(firmId)
 
     if(!firm){
-      return res.ststus(404).json({error :"Firm Not Found!"})
+      return res.status(404).json({error :"Firm Not Found!"})
     }
 
     const restaurantName = firm.firmName
