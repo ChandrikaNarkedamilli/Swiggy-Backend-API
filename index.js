@@ -23,7 +23,8 @@ dotEnv.config()
 const allowedOrigins = [
   'http://localhost:5173',
   'http://localhost:5174',
-  'https://swiggy-vendor-dashboard.vercel.app'
+  'https://swiggy-vendor-dashboard.vercel.app',
+  'https://swiggy-clone-xi-peach.vercel.app'
 ];
 
 // Configure CORS to allow requests from allowed origins
